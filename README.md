@@ -22,7 +22,7 @@ Docker Compose
 Installation : 
 
 Clonez ce dépôt : 
-
+git clone https://github.com/Bizzou1/TP-Docker-time-sheet.git
 
 
 
