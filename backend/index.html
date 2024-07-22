@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Schedule Udev-2</title>
+    <style>
+        body {
+            background-color: black;
+            color: gold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            border: 1px solid rgb(212, 193, 80);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        form {
+            border: 1px solid rgb(212, 193, 80);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="datetime-local"] {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            background-color: gold;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Time Schedule Udev-2</h1>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="matriculation">Matriculation Number:</label>
+            <input type="text" id="matriculation" name="matriculation" required>
+
+            <label for="signature">Signature:</label>
+            <input type="text" id="signature" name="signature" required>
+
+            <label for="datetime">Date and Time:</label>
+            <input type="datetime-local" id="datetime" name="datetime" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
